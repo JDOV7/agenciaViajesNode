@@ -1,0 +1,29 @@
+extends ./layout/index.pug
+block contenido
+    main(class="container mt-5")
+        div(class="row")
+            div(class="col-md-5")
+                img(src="img/nosotros.jpg" alt="Imagen sobre nosotros" class ="img-fluid")
+            div(class="col-md-7")
+                h1 #{locals.pagina}
+                blockquote  Donec eget ante ut odio condimentum scelerisque. Nam pellentesque vestibulum malesuada. Maecenas tincidunt sem eget velit ullamcorper, at consectetur neque tristique. Pellentesque sem dolor, vestibulum a interdum varius, aliquam a ante. Donec blandit, ligula a cursus malesuada, risus ante maximus orci, et faucibus sem felis posuere ex.
+
+                p Proin commodo consequat luctus. Sed eu aliquet ligula. Aenean a nibh posuere, aliquam tellus nec, luctus ligula. In feugiat risus dapibus congue interdum. Morbi porttitor sem quis justo sodales, non tristique orci sollicitudin. Curabitur cursus, purus sit amet ultricies volutpat, sapien massa pulvinar libero, sed dignissim leo magna et justo.
+
+                p Duis viverra molestie lacus, et interdum ante ullamcorper quis. Aliquam facilisis vel turpis a vestibulum. Nulla eu mattis odio. Fusce sit amet purus orci. Phasellus fringilla malesuada ex, eu porttitor dui auctor sed. Sed ullamcorper magna vel enim rutrum accumsan.
+    
+    div(class="listado-iconos")
+        div(class="container mt-5 py-5 text-center")
+            div(class="row")
+                div(class="col-md-4")
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2(class="b-4") Seguridad 
+                    p Duis viverra molestie lacus, et interdum ante ullamcorper quis.
+                div(class="col-md-4")
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2(class="b-4") Mejores Destinos 
+                    p Duis viverra molestie lacus, et interdum ante ullamcorper quis.
+                div(class="col-md-4")
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                    h2(class="b-4") Mejores Precios 
+                    p Duis viverra molestie lacus, et interdum ante ullamcorper quis.

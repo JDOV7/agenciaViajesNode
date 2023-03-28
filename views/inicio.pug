@@ -1,0 +1,28 @@
+extends ./layout/index.pug
+block slider
+    div(class="slider")
+        h1 Rio de Janeiro
+        em Aventura
+block contenido
+    main(class="container mt-5")
+        h2(class="text-center mb-5") Sobre Nosotros
+        div(class="row mb-5")
+            div(class="col-md-6")
+                p Sed pellentesque accumsan dolor. Nullam feugiat massa semper elit venenatis viverra. Nunc sollicitudin, sem ut ultrices semper, lectus ligula mollis enim, non faucibus sapien dolor at massa.
+                p Nunc mauris velit, efficitur quis erat a, cursus tempor est. Quisque hendrerit dui eget aliquam imperdiet. Nullam lorem lectus, sagittis non sodales sit amet, congue et tellus.
+
+            div(class="col-md-6")
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotors" class="img-fluid")
+        //- p= JSON.stringify(locals.viajes)
+        include ./layout/bloque_viajes
+    div(class="descuento")     
+        div(class="container")     
+            div(class="row")      
+                div(class="col-md-6")     
+                    div(class="contenido")     
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 de Abril de 2023 - 28 de Abril de 2023
+    .container 
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
